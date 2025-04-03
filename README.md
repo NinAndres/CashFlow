@@ -66,5 +66,5 @@ Quer contribuir com o **CashFlow**? Siga os passos:
 
 ---
 
-Desenvolvido com ❤️ por [Nicolas Andres](https://github.com/NinAndres) 🚀
+Desenvolvido por [Nicolas Andres](https://github.com/NinAndres) 🚀
 
