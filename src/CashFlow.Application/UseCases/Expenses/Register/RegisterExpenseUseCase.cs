@@ -1,6 +1,7 @@
-﻿using CashFlow.Communication.Enums;
-using CashFlow.Communication.Requests;
+﻿using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
+using CashFlow.Exception.ExceptionsBase;
+
 
 namespace CashFlow.Application.UseCases.Expenses.Register
 {
@@ -17,7 +18,11 @@ namespace CashFlow.Application.UseCases.Expenses.Register
             var validator = new RegisterExpenseValidator();
             var result = validator.Validate(request);
 
-            var errorMessages = result.Errors.Select(x => x.ErrorMessage).ToList();
+            if (result.IsValid == false)
+            {
+                var errorMessages = result.Errors.Select(x => x.ErrorMessage).ToList();
+                throw new ErrorOnValidationException(errorMessages);
+            }
         }
     }
 }
