@@ -29,7 +29,7 @@ O **CashFlow** é um sistema de gerenciamento financeiro desenvolvido em **C#** 
 ```plaintext
 CashFlow/
 ├── src/
-│   ├── Domain/           # Camada de Domínio (DDD)
+│   ├── Domain/         # Camada de Domínio (DDD)
 │   ├── Application/    # Serviços e Casos de Uso
 │   ├── Infrastructure/ # Banco de Dados e Repositórios
 │   ├── API/            # Controllers e Endpoints
