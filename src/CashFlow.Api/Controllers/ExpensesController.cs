@@ -11,11 +11,11 @@ namespace CashFlow.Api.Controllers
     {
         [HttpPost]
         [ProducesResponseType(typeof(ResponseRegisterExpenseJson), StatusCodes.Status201Created)]
-        public IActionResult Register(
+        public async Task<IActionResult> Register(
             [FromServices] IRegisterExpenseUseCase useCase,
             [FromBody] RequestRegisterExpenseJson request)
         {
-            var response = useCase.Execute(request);
+            var response = await useCase.Execute(request);
 
             return Created(string.Empty, response);
         }
