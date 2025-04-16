@@ -9,15 +9,16 @@ public class AutoMapping : Profile
     public AutoMapping()
     {
         RequestToEntity();
-        RequestToResponse();
+        EntityToResponse();
 
     }
     private void RequestToEntity()
     {
         CreateMap<RequestRegisterExpenseJson, Expense>();
     }
-    private void RequestToResponse()
+    private void EntityToResponse()
     {
-        CreateMap<Expense, ResponseRegisterExpenseJson>();
+        CreateMap<Expense, ResponseRegisteredExpenseJson>();
+        CreateMap<Expense, ResponseShortExpensesJson>();
     }
 }
