@@ -153,4 +153,7 @@
   <data name="PASSWORD_INVALID" xml:space="preserve">
     <value>Your password must be at least 8 characters long, containing at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, ?, *, .).</value>
   </data>
+  <data name="EMAIL_ALREADY_EXISTS" xml:space="preserve">
+    <value>This email already exists.</value>
+  </data>
 </root>
