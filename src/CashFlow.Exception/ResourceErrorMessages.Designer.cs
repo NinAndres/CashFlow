@@ -61,7 +61,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Amount cannot be less than zero.
+        ///   Looks up a localized string similar to Amount cannot be less than zero..
         /// </summary>
         public static string AMOUNT_GREATER_THAN_ZERO {
             get {
@@ -70,11 +70,29 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Amount is required.
+        ///   Looks up a localized string similar to Amount is required..
         /// </summary>
         public static string AMOUNT_REQUIRED {
             get {
                 return ResourceManager.GetString("AMOUNT_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The email cannot be empty..
+        /// </summary>
+        public static string EMAIL_EMPTY {
+            get {
+                return ResourceManager.GetString("EMAIL_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The email is invalid..
+        /// </summary>
+        public static string EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("EMAIL_INVALID", resourceCulture);
             }
         }
         
@@ -88,7 +106,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Expenses cannot be in the future.
+        ///   Looks up a localized string similar to Expenses cannot be in the future..
         /// </summary>
         public static string EXPENSES_CANNOT_BE_IN_FUTURE {
             get {
@@ -97,7 +115,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Expenses date is required.
+        ///   Looks up a localized string similar to Expenses date is required..
         /// </summary>
         public static string EXPENSES_DATE_REQUIRED {
             get {
@@ -106,7 +124,25 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Payment type is invalid.
+        ///   Looks up a localized string similar to The name cannot be empty..
+        /// </summary>
+        public static string NAME_EMPTY {
+            get {
+                return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your password must be at least 8 characters long, containing at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, ?, *, .)..
+        /// </summary>
+        public static string PASSWORD_INVALID {
+            get {
+                return ResourceManager.GetString("PASSWORD_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment type is invalid..
         /// </summary>
         public static string PAYMENT_TYPE_INVALID {
             get {
@@ -115,7 +151,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Title is required.
+        ///   Looks up a localized string similar to Title is required..
         /// </summary>
         public static string TITLE_REQUIRED {
             get {
@@ -124,7 +160,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unknown error.
+        ///   Looks up a localized string similar to Unknown error..
         /// </summary>
         public static string UNKNOWN_ERROR {
             get {

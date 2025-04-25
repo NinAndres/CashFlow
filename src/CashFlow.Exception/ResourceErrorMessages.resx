@@ -118,27 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AMOUNT_GREATER_THAN_ZERO" xml:space="preserve">
-    <value>Amount cannot be less than zero</value>
+    <value>Amount cannot be less than zero.</value>
   </data>
   <data name="AMOUNT_REQUIRED" xml:space="preserve">
-    <value>Amount is required</value>
+    <value>Amount is required.</value>
   </data>
   <data name="EXPENSES_DATE_REQUIRED" xml:space="preserve">
-    <value>Expenses date is required</value>
+    <value>Expenses date is required.</value>
   </data>
   <data name="PAYMENT_TYPE_INVALID" xml:space="preserve">
-    <value>Payment type is invalid</value>
+    <value>Payment type is invalid.</value>
   </data>
   <data name="TITLE_REQUIRED" xml:space="preserve">
-    <value>Title is required</value>
+    <value>Title is required.</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
-    <value>Unknown error</value>
+    <value>Unknown error.</value>
   </data>
   <data name="EXPENSES_CANNOT_BE_IN_FUTURE" xml:space="preserve">
-    <value>Expenses cannot be in the future</value>
+    <value>Expenses cannot be in the future.</value>
   </data>
   <data name="EXPENSE_NOT_FOUND" xml:space="preserve">
     <value>Expense not found.</value>
+  </data>
+  <data name="NAME_EMPTY" xml:space="preserve">
+    <value>The name cannot be empty.</value>
+  </data>
+  <data name="EMAIL_EMPTY" xml:space="preserve">
+    <value>The email cannot be empty.</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>The email is invalid.</value>
+  </data>
+  <data name="PASSWORD_INVALID" xml:space="preserve">
+    <value>Your password must be at least 8 characters long, containing at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, ?, *, .).</value>
   </data>
 </root>
