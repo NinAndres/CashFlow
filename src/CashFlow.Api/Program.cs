@@ -56,6 +56,16 @@ builder.Services.AddApplication();
 builder.Services.AddScoped<ITokenProvider, HttpContextTokenValue>();
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var signingKey = builder.Configuration.GetValue<string>("Settings:Jwt:SigningKey");
 
 builder.Services.AddAuthentication(config =>
@@ -91,6 +101,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 await MigrateDatabase();
+
+app.UseCors("AllowAll");
 
 app.Run();
 
