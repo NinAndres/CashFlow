@@ -15,10 +15,11 @@ internal class ExpensesRepository : IExpensesReadOnlyRepository, IExpensesWhiteO
             .AddAsync(expense);
     }
 
-    public async Task<List<Expense>> GetAll()
+    public async Task<List<Expense>> GetAll(User user)
     {
         return await _dbContext.Expenses
             .AsNoTracking()
+            .Where(expense => expense.UserId == user.Id)
             .ToListAsync();
     }
 
