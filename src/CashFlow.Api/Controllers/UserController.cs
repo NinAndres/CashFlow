@@ -46,7 +46,7 @@ public class UserController : CashFlowBaseController
         return NoContent();
     }
 
-    [HttpPut]
+    [HttpPut("change-password")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
     [Authorize]
@@ -55,6 +55,16 @@ public class UserController : CashFlowBaseController
         [FromServices] RequestChangePasswordJson request)
     {
         await useCase.Execute(request);
+        return NoContent();
+    }
+
+    [HttpDelete]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [Authorize]
+    public async Task<IActionResult> Delete(
+        [FromServices] IDeleteUserUseCase useCase)
+    {
+
         return NoContent();
     }
 }

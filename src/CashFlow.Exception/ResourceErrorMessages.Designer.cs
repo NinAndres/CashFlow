@@ -151,6 +151,15 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The password entered is different from the current password..
+        /// </summary>
+        public static string PASSWORD_DIFFERENT_CURRENT_PASSWORD {
+            get {
+                return ResourceManager.GetString("PASSWORD_DIFFERENT_CURRENT_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your password must be at least 8 characters long, containing at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, ?, *, .)..
         /// </summary>
         public static string PASSWORD_INVALID {
