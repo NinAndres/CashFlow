@@ -2,7 +2,7 @@
 using CashFlow.Exception;
 using FluentValidation;
 
-namespace CashFlow.Application.UseCases.User;
+namespace CashFlow.Application.UseCases.User.Register;
 public class UserValidator : AbstractValidator<RequestRegisterUserJson>
 {
     public UserValidator()
