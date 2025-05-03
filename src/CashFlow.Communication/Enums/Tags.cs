@@ -1,4 +1,4 @@
-﻿namespace CashFlow.Domain.Enums;
+﻿namespace CashFlow.Communication.Enums;
 public enum Tags
 {
     Health = 0,
