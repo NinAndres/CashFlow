@@ -1,4 +1,5 @@
 ﻿using CashFlow.Application.UseCases.User.ChangePassword;
+using CashFlow.Application.UseCases.User.Delete;
 using CashFlow.Application.UseCases.User.GetProfile;
 using CashFlow.Application.UseCases.User.Register;
 using CashFlow.Application.UseCases.User.Update;
@@ -62,7 +63,7 @@ public class UserController : CashFlowBaseController
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [Authorize]
     public async Task<IActionResult> Delete(
-        [FromServices] IDeleteUserUseCase useCase)
+        [FromServices] IDeleteUserAccountUseCase useCase)
     {
 
         return NoContent();
